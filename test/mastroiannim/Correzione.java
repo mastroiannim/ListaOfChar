@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-
 class ListaOfChar extends grecomg.ListaOfChar {
 
     public ListaOfChar (){super();}
@@ -23,7 +22,7 @@ class ListaOfChar extends grecomg.ListaOfChar {
         s+=")";
         return s;
     }*/
-    
+    //public void shuffle(int i, int j) {}
 }
 
 public class Correzione{
@@ -246,7 +245,7 @@ public class Correzione{
         locOk.append('e');
         locOk.append('f');
         locOk.append('g');
+        System.out.println(locOk.toString());
         assertEquals(locOk.toString(), loc1.toString());
-        System.out.println(loc1.toString());
     }
 }
