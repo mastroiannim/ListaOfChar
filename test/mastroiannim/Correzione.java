@@ -20,9 +20,10 @@ class ListaOfChar extends grecomg.ListaOfChar {
             if(i!=null)
                 s+=", ";
         }
-        s+="):";
+        s+=")";
         return s;
     }*/
+    
 }
 
 public class Correzione{
@@ -246,5 +247,6 @@ public class Correzione{
         locOk.append('f');
         locOk.append('g');
         assertEquals(locOk.toString(), loc1.toString());
+        System.out.println(loc1.toString());
     }
 }
