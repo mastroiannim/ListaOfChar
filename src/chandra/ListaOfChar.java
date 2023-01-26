@@ -2,8 +2,11 @@ package chandra;
 
 public class ListaOfChar
 {
-    Nodo head;
-    int length;
+    protected Nodo head;
+    protected int length;
+
+    //PROF.
+    //manca toString!
     
     public ListaOfChar(){
         head = null;
@@ -136,12 +139,11 @@ public class ListaOfChar
         
         return this;
     }
-}
-
-class Nodo implements Comparable
+    //PROF.
+    public class Nodo implements Comparable
 {
-    char info;
-    Nodo next;
+    public char info; //PROF.
+    public Nodo next; //PROF.
     
     public Nodo(char info){
         this.info = info;
@@ -161,6 +163,9 @@ class Nodo implements Comparable
         return 1;
     }
 }
+}
+
+
 
 class ListaOutOfBounds extends RuntimeException{
     

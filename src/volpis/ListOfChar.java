@@ -1,8 +1,17 @@
 package volpis;
 
-class ListOfChar{
-    Node head;
-    int length = 0;
+public class ListOfChar{
+    protected Node head;        //PROF.
+    protected int length = 0;   //PROF.
+
+
+    //PROF.
+    public ListOfChar(){
+    }
+
+    //PROF.
+    public ListOfChar(ListOfChar a, ListOfChar b){
+    }
     public ListOfChar(char[] caratteri) {
         for (int i=0; i<caratteri.length; i++) {
             this.append(caratteri[i]);
@@ -164,8 +173,8 @@ class ListOfChar{
     //Node class
     class Node{
         //String info;
-        char info;
-        Node next = null;
+        public char info;           //PROF.
+        public Node next = null;    //PROF.
 
         public Node(char info) {
             this.info = info;

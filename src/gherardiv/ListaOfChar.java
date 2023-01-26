@@ -4,6 +4,11 @@ public class ListaOfChar
     public Nodo head = null;
     public int length = 0;
 
+    //PROF.
+    public void append(char c){
+        append(new Nodo(c));
+    }
+
     public ListaOfChar(char[] array){
         for (char c : array) {
             this.append(new Nodo(c));

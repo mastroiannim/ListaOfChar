@@ -3,6 +3,6 @@ package bresciani;
 
 public class Nodo
 {
-    char info;
-    Nodo next;
+    public char info; //PROF.
+    public Nodo next; //PROF.
 }

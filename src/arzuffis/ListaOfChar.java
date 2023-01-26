@@ -2,7 +2,28 @@ package arzuffis;
 public class ListaOfChar extends RuntimeException
 {
     public int lunghezza = 1;
-    Node head = new Node('h');
+    protected Node head = new Node('h');
+
+    //PROF.
+    //perchè lista estende Exception?
+    //non crei la lista concatenata, non istanzi con new Node() 
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(){
+    }
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
+    //PROF.
+    public void append(char c){
+        append(new Node(c));
+    }
+
     public ListaOfChar(char[] ac){
         Node i = this.head;
         i.oggetto = 'h';
@@ -118,8 +139,8 @@ public class ListaOfChar extends RuntimeException
     }
     public class Node
     {
-        Object oggetto;
-        Node prossimo;
+        public Object oggetto; //PROF.
+        public Node prossimo; //PROF.
         public int posizione;
         public Node(Object c){
             this.oggetto = c;

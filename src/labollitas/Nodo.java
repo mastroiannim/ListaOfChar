@@ -1,8 +1,8 @@
 package labollitas;
 public class Nodo
 {
-    char info;
-    Nodo next;
+    public char info; //PROF.
+    public Nodo next; //PROF.
     
     public Nodo(char o){
         this.info = o;

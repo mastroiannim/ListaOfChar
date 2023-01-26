@@ -1,9 +1,14 @@
 package todeschinip;
 public class ListaOfChar
 {
-    Nodo head;
-    int length=0;
-    ListaOfChar(){
+    protected Nodo head;    //PROF.
+    protected int length=0; //PROF.
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
+    public ListaOfChar(){
         this.head=null;
     }
     
@@ -85,7 +90,7 @@ public class ListaOfChar
         length--;
     }
     //ESERCIZIO 3
-    ListaOfChar(char[] c){
+    public ListaOfChar(char[] c){
         this.head=null;
         for(int i=0;i<c.length;i++){
             this.append(c[i]);
@@ -121,8 +126,8 @@ public class ListaOfChar
     }
 }
 class Nodo{
-    char info;
-    Nodo next;
+    public char info; //PROF.
+    public Nodo next; //PROF.
     Nodo(char c){
         this.info=c;
         this.next=null;

@@ -2,8 +2,8 @@ package crisafullip;
 
 public class Nodo
 {
-    char info;
-    Nodo succ;
+    public char info; //PROF.
+    public Nodo succ; //PROF.
     
     public Nodo(char c){
         this.info = c;

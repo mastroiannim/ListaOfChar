@@ -1,6 +1,7 @@
 package gavocid;
 
-
+//PROF.
+//Perchè consegnare il codice con errori di compilazione?
 public class DueListe{
         Nodo head;
         public void Liste(listaGavoci lista1, listaGavoci lista2) {

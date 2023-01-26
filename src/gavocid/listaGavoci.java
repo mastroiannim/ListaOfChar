@@ -5,6 +5,18 @@ public class listaGavoci
     public Nodo head;
     public int lunghezza;
     char[] caratteri = new char[4];
+
+    //PROF.
+    public listaGavoci(){
+    }
+
+    //PROF.
+    public listaGavoci(char[] c){
+    }
+
+    //PROF.
+    public listaGavoci(listaGavoci a, listaGavoci b){
+    }
     
     public listaGavoci(char a, char b, char c, char d){
         head = null;

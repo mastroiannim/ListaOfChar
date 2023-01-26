@@ -1,7 +1,32 @@
 package masper;
 
-    class ListaOfChar {
-    Nodo head;
+    public class ListaOfChar {
+    protected Nodo head; //PROF.
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(){
+        head = null;
+    }
+
+    //PROF.
+    public void append(char info){
+        if(head == null){
+            head = new Nodo(info);
+            return;
+        }
+        Nodo i = head;
+        Nodo j = null;
+        while(i != null){
+            j = i;
+            i = i.next;
+        }
+        i = new Nodo(info);
+        j.next = i;
+    }
+
     public int beforeC1(char c1, char c2) {
         Nodo nuovonodo = new Nodo(c2);
         int posizione = 0;

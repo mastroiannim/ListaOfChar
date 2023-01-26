@@ -1,8 +1,13 @@
 package zini;
 
 public class ListaOfChar extends Exception{
-    Node head;
-    int length;
+    protected Node head;
+    protected int length;
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
     public ListaOfChar(){
         head = null;
         length = 0;
@@ -114,8 +119,8 @@ public class ListaOfChar extends Exception{
         length++;
     }
     class Node {
-        private char info;
-        private Node next;
+        public char info;   //PROF.
+        public Node next;   //PROF.
 
         Node(char info){
             this.info = info;

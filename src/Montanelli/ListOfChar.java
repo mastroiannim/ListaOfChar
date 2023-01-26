@@ -2,8 +2,13 @@ package Montanelli;
 public class ListOfChar
 {
   
-    private Node head;
-    private int length;
+    protected Node head; //PROF.
+    protected int length; //PROF.
+
+    //PROF.
+    public ListOfChar(ListOfChar a, ListOfChar b){
+    }
+
     public ListOfChar()
     {
    

@@ -7,18 +7,18 @@ public class ListaOfChar {
     Node head;
     int length;
 
-    ListaOfChar() {
+    public ListaOfChar() {
         head = null;
         length = 0;
     }
 
-    ListaOfChar(char[] chars) {
+    public ListaOfChar(char[] chars) {
         for (int i = 0; i < chars.length; i++) {
             append(chars[i]);
         }
     }
 
-    ListaOfChar(ListaOfChar chars1, ListaOfChar chars2) {
+    public ListaOfChar(ListaOfChar chars1, ListaOfChar chars2) {
         char[] temp = new char[chars1.length + chars2.length];
         for (int i=0; i<chars1.length; i++) {
             temp[i] = chars1.get(i);
@@ -136,12 +136,13 @@ public class ListaOfChar {
         return sb.toString();
     }
 
-    public ListaOfChar beforeC1(char c1, char c2) {
+    //PROF.
+    public int /* ListaOfChar */ beforeC1(char c1, char c2) {
         Node cc2 = new Node(c2);
         if (head == null) {
             head = cc2;
             length++;
-            return this;
+            return 0; //PROF.
         }
         
         Node p = head;
@@ -160,7 +161,7 @@ public class ListaOfChar {
         else append(c2);
         length++;
 
-        return this;
+        return c1Pos+1; //PROF.
     }
 
     public ListaOfChar shuffle(int from, int to) throws Exception {

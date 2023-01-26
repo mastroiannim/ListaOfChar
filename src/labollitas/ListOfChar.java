@@ -3,6 +3,15 @@ public class ListOfChar
 {
     public Nodo head;
     public int lunghezza;
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListOfChar(){
+        head = null;
+    }
+
     public ListOfChar(char[] p){
         for(int i = 0; i<p.length; i++){
             append(p[i]);

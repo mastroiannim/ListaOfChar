@@ -2,8 +2,8 @@ package gavocid;
 
 public class Nodo
 {
-    Object info;
-    Nodo succ;
+    public Object info; //PROF.
+    public Nodo succ; //PROF.
     
     public Nodo(char o){
         this.info = o;

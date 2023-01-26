@@ -6,7 +6,19 @@ public class ListaOfChar
 {
     public Nodo head;
     public Nodo next;
-    public static int length;
+    public /*static*/ int length; //PROF.
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(char[] c){
+    }
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
    public ListaOfChar(){
        head = null;
        length = 0;
@@ -34,7 +46,7 @@ public class ListaOfChar
         Nodo precedente = null;
         int posizioneC1 = 0;;
         Nodo Nodec2 = new Nodo(c2);
-        for(int i = 0; i< ListaOfChar.length-1; i++){
+        for(int i = 0; i< /*ListaOfChar.*/length-1; i++){ //PROF.
             precedente = indice;
             indice = indice.next;
             posizioneC1++;
@@ -117,7 +129,7 @@ public class ListaOfChar
             head = attuale2;
         }
         
-        if( to >= ListaOfChar.length){
+        if( to >= /*ListaOfChar.*/ length){ //PROF.
             this.append(indice.info);
         }
         

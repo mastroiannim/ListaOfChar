@@ -1,7 +1,7 @@
 package arnoldi;
 public class ListaOfChar
 {
-    Nodo head=null;
+    protected Nodo head=null; //PROF.
     int length=0;
     char[] array={'a','b','c'};
     public ListaOfChar(ListaOfChar l)
@@ -11,6 +11,33 @@ public class ListaOfChar
         }
         
     }
+
+    //PROF.
+    //il metodo shuffle entra in loop infinito
+    
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(){
+    }
+
+    //PROF.
+    public ListaOfChar(char[] c){
+    }
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
+    //PROF.
+    public void append(char c){
+        insertAt(length, new Nodo(c));
+    }
+
+    
+    
+
     private int trova(char c1,char c){
         for(int i=length-1;i>=0;i--){
             if(c==c1){

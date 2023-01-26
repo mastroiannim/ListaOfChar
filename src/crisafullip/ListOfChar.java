@@ -9,6 +9,30 @@ public class ListOfChar
     public Nodo head;
     char info;
     
+    //PROF.
+    //manca toString!
+    
+    //PROF.
+    public ListOfChar(){
+        head = null;
+        lunghezza = 0;
+    }
+
+    //PROF.
+    public void append(char info){
+        if(head == null){
+            head = new Nodo(info);
+            return;
+        }
+        Nodo i = head;
+        Nodo j = null;
+        while(i != null){
+            j = i;
+            i = i.succ;
+        }
+        i = new Nodo(info);
+        j.succ = i;
+    }
     
     public ListOfChar(char[] caratteri){
         if(caratteri.length == 0){

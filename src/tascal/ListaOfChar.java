@@ -2,7 +2,34 @@ package tascal;
 
 public class ListaOfChar
 {
-    Node head;
+    protected Node head; //PROF.
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(){
+    }
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
+    //PROF.
+    public void append(char info){
+        if(head == null){
+            head = new Node(info);
+            return;
+        }
+        Node i = head;
+        Node j = null;
+        while(i != null){
+            j = i;
+            i = i.next;
+        }
+        i = new Node(info);
+        j.next = i;
+    }
     
     public ListaOfChar(char[] caratteri){
         caratteri = new char[10];

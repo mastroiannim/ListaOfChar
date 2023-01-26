@@ -4,6 +4,13 @@ public class ListaOfChar
 {
     public Nodo head;
     private int length;
+
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
     
     public ListaOfChar()
     {
@@ -11,7 +18,8 @@ public class ListaOfChar
        this.length = 0;
     }
     
-    public void ListaOfChar(char[] cartteri){
+    //PROF.
+    public /* void */ListaOfChar(char[] cartteri){
         for(int i = this.length; i<cartteri.length; i++){
             this.append(cartteri[i]);
         }

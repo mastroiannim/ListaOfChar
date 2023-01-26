@@ -3,8 +3,8 @@ package tascal;
 
 public class Node
 {
-    char info;
-    Node next;
+    public char info; //PROF.
+    public Node next; //PROF.
     public Node(char info){
         this.info = info;
         this.next = null;

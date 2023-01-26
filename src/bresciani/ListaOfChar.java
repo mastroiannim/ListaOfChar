@@ -2,6 +2,37 @@ package bresciani;
 
 public class ListaOfChar
 {
+    //PROF.
+    //manca toString!
+
+    //PROF.
+    public ListaOfChar(){
+        head = null;
+    }
+
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){
+    }
+
+
+    //PROF.
+    public void append(char info){
+        if(head == null){
+            head = new Nodo();
+            head.info = info;
+            return;
+        }
+        Nodo i = head;
+        Nodo j = null;
+        while(i != null){
+            j = i;
+            i = i.next;
+        }
+        i = new Nodo();
+        i.info = info;
+        j.next = i;
+    }
+
     public  Nodo  head;
     public int beforeC1(char c1, char c2){
         Nodo n = new Nodo();

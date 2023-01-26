@@ -5,8 +5,19 @@ public class ListaOfChar
 {
     private int items;
     private Nodo last;
-    private Nodo head;
+    protected Nodo head; //PROF.
+
+    //PROF.
+    //manca toString!
     
+    //PROF.
+    public ListaOfChar(ListaOfChar a, ListaOfChar b){}
+
+    //PROF.
+    public int beforeC1(char c1, char c2){
+        return beforec1(c1, c2);
+    }
+
     public ListaOfChar(){
         head=null;
         items=0;
@@ -173,8 +184,8 @@ public class ListaOfChar
     
     public class Nodo
     {
-        private char info;
-        private Nodo next;
+        public char info;  //PROF.
+        public Nodo next;  //PROF.
         public Nodo(char info){
             this.info=info;
             this.next=null;
